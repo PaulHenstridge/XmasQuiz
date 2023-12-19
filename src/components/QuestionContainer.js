@@ -29,6 +29,7 @@ const QuestionContainer = () => {
             key={q.id}
             question={q.question} 
             correctAnswer={q.answer} 
+            image = {q.img}
             onCorrectAnswer={() => handleCorrectAnswer(q.id)}
         />
     ))}

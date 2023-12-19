@@ -2,19 +2,19 @@ import { useState } from "react";
 import styled from 'styled-components';
 
 const AnswerInput = styled.input`
-    /* Default input styles */
+    
     &:disabled {
         background-color: #e0e0e0;
         color: #9e9e9e;
     }
 `;
 
-const QuestionBox = styled.div`
-    /* Default container styles */
+const QuestionBox = styled.article`
+    
     background-color: ${props => props.isAnswered ? '#d4edda' : 'white'}; // Change background if answered
 `;
 
-const Question = ({question, correctAnswer, onCorrectAnswer}) => {
+const Question = ({question, correctAnswer, onCorrectAnswer, image}) => {
 
     const [userInput, setUserInput] = useState('');
     const [isAnswered, setIsAnswered] = useState(false);
@@ -28,6 +28,7 @@ const Question = ({question, correctAnswer, onCorrectAnswer}) => {
     }
     return ( 
     <QuestionBox isAnswered={isAnswered}>
+        {image && <img src={image} alt="who is this"></img>}
         <h3>{question}</h3>
           <AnswerInput 
             placeholder="answer here"
