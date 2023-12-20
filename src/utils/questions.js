@@ -19,7 +19,6 @@ import france from "../assets/france.png"
 
 export const questionsArray = [
     { id: 'q1', question: 'What is 2+2?', answer: '4' },
-    { id: 'q2', question: 'What color is the sky?', answer: 'blue' },
     { id: 'q3', question: 'Who dis guy??', answer: 'messi', img: messi },
     { id: 'q4', question: 'What football team is this?', answer: 'liverpool', img: liverpool },
     { id: 'q5', question: 'In the song "Baby Shark", how many times do they sing the word "doo" ?', answer: '162', img: shark },
@@ -30,7 +29,7 @@ export const questionsArray = [
     { id: 'q10', question: 'What animal is this?', answer: 'horsefly', img: fly },
     { id: 'q11', question: 'What animal is this?', answer: 'butterfly', img: butterfly },
     { id: 'q12', question: 'What is at the end of everything?', answer: 'g', img: everything },
-    { id: 'q13', question: 'Find the mysterious symbol of destiny for your clue!  Hint: Where might you find lots of keys that dont fit any locks!', answer: '###', img: QR  },
+    { id: 'q13', question: 'Find the mysterious symbol of destiny for your clue!  Hint: Where might you find lots of keys that dont fit any locks!', answer: '#', img: QR  },
     { id: 'q14', question: 'If 3 cats can catch 3 bunnies in 3 minutes, how long will it take 100 cats to catch 100 bunnies?', answer: '3 minutes', img: bunnies  },
     { id: 'q15', question: 'Mr McScruffyFlumps has just bought himself an impressive beard-hat, and also a new pair of shiny boots.  It cost him $150 in total, and the beard-hat cost $100 more than the boots.  How much did the boots cost?', answer: '25', img: scruffyflumps  },
     { id: 'q16', question: 'What is green and orange and sounds like a parrot?', answer: 'carrot', img: parrot  },
