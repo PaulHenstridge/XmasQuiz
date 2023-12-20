@@ -2,39 +2,36 @@ import { useState, useEffect } from "react";
 
 import Question from "./Question";
 import { questionsArray } from "../utils/questions";
+import PrizeBox from "./PrizeBox";
+
 
 const QuestionContainer = () => {
-    const [answeredQuestions, setAnsweredQuestions] = useState({});
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [gameCompleted, setGameCompleted] = useState(false);
 
-    const handleCorrectAnswer = (questionId) => {
-        setAnsweredQuestions(prevState => ({
-            ...prevState,
-            [questionId]: true
-        }));
+    const handleCorrectAnswer = () => {
+        setCurrentQuestionIndex(prevIndex => prevIndex + 1);
     };
 
     useEffect(() => {
-        const answeredCount = Object.keys(answeredQuestions).length;
-        if (answeredCount === questionsArray.length) {
+        if (currentQuestionIndex === questionsArray.length) {
             setGameCompleted(true);
         }
-    }, [answeredQuestions]);
+    }, [currentQuestionIndex]);
 
 
     return ( <>
-    <h1>{Object.keys(answeredQuestions)}</h1>
-    {questionsArray.map(q => (
+    {questionsArray.slice(0, currentQuestionIndex + 1).map(q => (
         <Question 
             key={q.id}
             question={q.question} 
             correctAnswer={q.answer} 
             image = {q.img}
-            onCorrectAnswer={() => handleCorrectAnswer(q.id)}
+            onCorrectAnswer={ handleCorrectAnswer}
         />
     ))}
     
-    {gameCompleted && <div> You completed the quiz!</div>}
+   {gameCompleted && <PrizeBox />}
 
     </> );
 }
