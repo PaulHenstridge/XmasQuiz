@@ -50,7 +50,7 @@ const Question = ({question, correctAnswer, onCorrectAnswer, image, isCurrent}) 
 
     const handleChange = (event) => {
         setUserInput(event.target.value);
-        if (event.target.value === correctAnswer && !isAnswered) {
+        if (event.target.value.toLowerCase() === correctAnswer && !isAnswered) {
             setIsAnswered(true)
             onCorrectAnswer(); // Notify parent component
         }

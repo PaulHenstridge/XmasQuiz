@@ -1,7 +1,12 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #170942;
+}
+
 .App {
   text-align: center;
-  background-color: #170942;
   color: #D9E8EE;
-  height: 100vh;
 }
 
