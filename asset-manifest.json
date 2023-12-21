@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/XmasQuiz/static/css/main.f42def4e.css",
+    "main.js": "/XmasQuiz/static/js/main.2af37e41.js",
+    "static/js/787.d83f9e45.chunk.js": "/XmasQuiz/static/js/787.d83f9e45.chunk.js",
+    "static/media/scruffyflumps.png": "/XmasQuiz/static/media/scruffyflumps.cace0b6457cbfbf7fc5c.png",
+    "static/media/QR.png": "/XmasQuiz/static/media/QR.cec7052ce76561cbe113.png",
+    "static/media/bunnies.png": "/XmasQuiz/static/media/bunnies.caf953e75eb18ef56c0d.png",
+    "static/media/everything.png": "/XmasQuiz/static/media/everything.f3ac6661bcb67de041ef.png",
+    "static/media/photo.png": "/XmasQuiz/static/media/photo.24dc1b4d7653460d2488.png",
+    "static/media/liverpool.png": "/XmasQuiz/static/media/liverpool.8522caa2d5d8c3910443.png",
+    "static/media/fly.png": "/XmasQuiz/static/media/fly.788f3764b726259fc8d6.png",
+    "static/media/tigerShark.png": "/XmasQuiz/static/media/tigerShark.a48b147e4027e0c5f1d7.png",
+    "static/media/butterfly.png": "/XmasQuiz/static/media/butterfly.e8dacd313a99beafd1ab.png",
+    "static/media/parrot.png": "/XmasQuiz/static/media/parrot.452402c72d453c9cbd39.png",
+    "static/media/shark.png": "/XmasQuiz/static/media/shark.bd1f309da4d34dc14a79.png",
+    "static/media/thistle.png": "/XmasQuiz/static/media/thistle.680beaac0771c0daef28.png",
+    "static/media/fash.png": "/XmasQuiz/static/media/fash.8ca2f98be377224f37a6.png",
+    "static/media/messi.png": "/XmasQuiz/static/media/messi.533357124fcff5ae72d2.png",
+    "static/media/logo.svg": "/XmasQuiz/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/XmasQuiz/index.html",
+    "main.f42def4e.css.map": "/XmasQuiz/static/css/main.f42def4e.css.map",
+    "main.2af37e41.js.map": "/XmasQuiz/static/js/main.2af37e41.js.map",
+    "787.d83f9e45.chunk.js.map": "/XmasQuiz/static/js/787.d83f9e45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f42def4e.css",
+    "static/js/main.2af37e41.js"
+  ]
+}
