@@ -21,13 +21,14 @@ const QuestionContainer = () => {
 
 
     return ( <>
-    {questionsArray.slice(0, currentQuestionIndex + 1).map(q => (
+    {questionsArray.slice(0, currentQuestionIndex + 1).map((q,index) => (
         <Question 
             key={q.id}
             question={q.question} 
             correctAnswer={q.answer} 
             image = {q.img}
             onCorrectAnswer={ handleCorrectAnswer}
+            isCurrent={index === currentQuestionIndex}
         />
     ))}
     

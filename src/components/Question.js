@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import styled from 'styled-components';
 
 
@@ -40,10 +40,13 @@ const AnswerInput = styled.input`
     }
 `;
 
-const Question = ({question, correctAnswer, onCorrectAnswer, image}) => {
+const Question = ({question, correctAnswer, onCorrectAnswer, image, isCurrent}) => {
 
     const [userInput, setUserInput] = useState('');
     const [isAnswered, setIsAnswered] = useState(false);
+
+    const questionRef = useRef(null);
+    const inputRef = useRef(null);
 
     const handleChange = (event) => {
         setUserInput(event.target.value);
@@ -52,8 +55,20 @@ const Question = ({question, correctAnswer, onCorrectAnswer, image}) => {
             onCorrectAnswer(); // Notify parent component
         }
     }
+
+    useEffect(() => {
+    if (isCurrent && inputRef.current && questionRef.current) {
+        // Scroll to the question
+        questionRef.current.scrollIntoView({ behavior: 'smooth' });
+
+        // Focus on the input field
+        inputRef.current.focus();
+    }
+}, [isCurrent]);
+
+
     return ( 
-    <QuestionBox isAnswered={isAnswered}>
+    <QuestionBox isAnswered={isAnswered} ref={questionRef}>
         {image && <ImageBox> <img src={image} alt="who is this"></img></ImageBox> }
         <h3>{question}</h3>
           <AnswerInput 
@@ -61,6 +76,7 @@ const Question = ({question, correctAnswer, onCorrectAnswer, image}) => {
             value = {userInput}
             onChange={handleChange}
             disabled={isAnswered}
+            ref={inputRef}
          />
     </QuestionBox> );
 }
