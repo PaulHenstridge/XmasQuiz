@@ -9,6 +9,9 @@ const HeaderBox = styled.header`
         font-size: 4rem;
         font-family:"Rubik Doodle Shadow";
         color: #31839A;
+        @media (max-width: 400px){
+            font-size: 3rem;
+        }
     }
     & h2 {
         font-size: 2rem;
@@ -20,6 +23,9 @@ const HeaderBox = styled.header`
         /* border: 4px solid red; */
         padding:2rem;
         line-height:1.4;
+        @media (max-width: 500px){
+            padding:1rem;
+        }
     }
 `
 
@@ -30,7 +36,7 @@ const Header = () => {
     <h1>Brodie's Christmas Challenge!</h1>
     <p><h2>Hi Brodie!</h2> <br></br> I got you a PlayStation voucher for Christmas, but it was just a jumble of numbers and letters,
         so I put them into this program so I wouldn't lose them.
-        Then I protected them with {questionsArray.length} security questions so they would be safe!<br></br><br></br>
+        Then I protected them with {questionsArray.length} security questions so they would be extra safe!<br></br><br></br>
         But... <br></br> I forgot all the answers🙄 <br></br><br></br>Hope you can
         figure them out!  <br></br><br></br>
         If you dont know an answer you might need to think who around here might be able to help...

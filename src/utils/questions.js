@@ -23,18 +23,22 @@ export const questionsArray = [
     { id: 'q4', question: 'What football team is this?', answer: 'liverpool', img: liverpool },
     { id: 'q7', question: 'What kind of fish is this?', answer: 'haddock', img: fash },
     { id: 'q5', question: 'In the song "Baby Shark", how many times do they sing the word "doo" ?', answer: '162', img: shark },
-    { id: 'q6', question: 'In "Flower of Scotland", they stood against him.  Against who?', answer: 'proud edwards army', img: thistle },
-    { id: 'q8', question: 'A man looks at a photograph and exclaims, “Brothers and sisters I have none, but that man’s father is my father’s son!” Who is the photograph of?', answer: 'his son', img: photo },
     { id: 'q9', question: 'What animal is this?', answer: 'tiger shark', img: tigerShark },
-    { id: 'q13', question: 'Find the mysterious symbol of destiny for your clue!  Hint: Where might you find lots of keys that dont fit any locks!', answer: '#', img: QR  },
+    { id: 'q6', question: 'In "Flower of Scotland", they stood against him.  Against who?', answer: 'proud edwards army', img: thistle },
+    { id: 'q13', question: 'Find the mysterious symbol of destiny for your clue!  Hint: Where might you find lots of keys that dont fit any locks!', answer: 'hedgehog', img: QR  },
     { id: 'q17', question: 'What is the value of the STAR?', answer: '1', img: star  },
+    { id: 'q8', question: 'A man looks at a photograph and exclaims, “Brothers and sisters I have none, but that man’s father is my father’s son!” Who is the photograph of?', answer: 'his son', img: photo },
     { id: 'q10', question: 'What animal is this?', answer: 'horsefly', img: fly },
+    { id: 'q13b', question: 'Find the mysterious symbol of mystery and destiny for your next clue!  Hint: ????????!', answer: '#', img: QR  },
     { id: 'q14', question: 'If 3 cats can catch 3 bunnies in 3 minutes, how long will it take 100 cats to catch 100 bunnies?', answer: '3 minutes', img: bunnies  },
-    { id: 'q15', question: 'Mr McScruffyFlumps has just bought himself an impressive beard-hat, and also a new pair of shiny boots.  It cost him $150 in total, and the beard-hat cost $100 more than the boots.  How much did the boots cost?', answer: '25', img: scruffyflumps  },
     { id: 'q16', question: 'What is green and orange and sounds like a parrot?', answer: 'carrot', img: parrot  },
+    { id: 'q13b', question: 'Mysterious symbol of mysterious destiny time again!!!!  Hint: ????????!', answer: '#', img: QR  },
+    { id: 'q15', question: 'Mr McScruffyFlumps has just bought himself an impressive beard-hat, and also a new pair of shiny boots.  It cost him $150 in total, and the beard-hat cost $100 more than the boots.  How much did the boots cost?', answer: '25', img: scruffyflumps  },
     { id: 'q18', question: 'What movie is this, translated into French: "Blanche Neige et les Sept Nains" ?', answer: 'snow white', img: france  },
     { id: 'q11', question: 'What animal is this?', answer: 'butterfly', img: butterfly },
     { id: 'q12', question: 'What is at the end of everything?', answer: 'g', img: everything },
+    { id: 'q13c', question: 'Final Question! well done, you almost made it!  OK, find the mysterious symbol of mysterious destiny and mystery one more mysterious time! Hint: ????????!', answer: '#', img: QR  },
+
 
 
 
