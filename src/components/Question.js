@@ -14,13 +14,17 @@ const QuestionBox = styled.article`
 `;
 
 const ImageBox = styled.div`
-    width:40%;
+    width:60%;
     aspect-ratio:1;
     overflow:hidden;
     display:flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+
+    @media (max-width:500px) {
+        width: 60%
+    }
 
     & img{
         max-width:100%;
@@ -40,7 +44,7 @@ const AnswerInput = styled.input`
     }
 `;
 
-const Question = ({question, correctAnswer, onCorrectAnswer, image, isCurrent}) => {
+const Question = ({question, correctAnswer, onCorrectAnswer, image, isCurrent, questionNumber}) => {
 
     const [userInput, setUserInput] = useState('');
     const [isAnswered, setIsAnswered] = useState(false);
@@ -50,7 +54,7 @@ const Question = ({question, correctAnswer, onCorrectAnswer, image, isCurrent}) 
 
     const handleChange = (event) => {
         setUserInput(event.target.value);
-        if (event.target.value.toLowerCase() === correctAnswer && !isAnswered) {
+        if (event.target.value.toLowerCase().trim() === correctAnswer && !isAnswered) {
             setIsAnswered(true)
             onCorrectAnswer(); // Notify parent component
         }
@@ -69,8 +73,8 @@ const Question = ({question, correctAnswer, onCorrectAnswer, image, isCurrent}) 
 
     return ( 
     <QuestionBox isAnswered={isAnswered} ref={questionRef}>
-        {image && <ImageBox> <img src={image} alt="who is this"></img></ImageBox> }
-        <h3>{question}</h3>
+        {image && <ImageBox> <img src={image} alt="question clue"></img></ImageBox> }
+        <h3><span>{questionNumber}. </span>{question}</h3>
           <AnswerInput 
             placeholder="answer here"
             value = {userInput}

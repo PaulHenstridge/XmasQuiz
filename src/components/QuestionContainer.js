@@ -29,6 +29,7 @@ const QuestionContainer = () => {
             image = {q.img}
             onCorrectAnswer={ handleCorrectAnswer}
             isCurrent={index === currentQuestionIndex}
+            questionNumber={index+1}
         />
     ))}
     
