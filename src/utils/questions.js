@@ -37,7 +37,7 @@ export const questionsArray = [
     { id: 'q18', question: 'What movie is this, translated into French: "Blanche Neige et les Sept Nains" ?', answer: 'snow white', img: france  },
     { id: 'q11', question: 'What animal is this?', answer: 'butterfly', img: butterfly },
     { id: 'q12', question: 'What is at the end of everything?', answer: 'g', img: everything },
-    { id: 'q13c', question: 'Final Question! well done, you almost made it!  OK, find the mysterious symbol of mysterious destiny and mystery one more mysterious time! Hint: ????????!', answer: '#', img: QR  },
+    { id: 'q13c', question: 'Final Question! well done, you almost made it!  OK, find the mysterious symbol of mysterious destiny and mystery one more mysterious time! Hint: Mummy has a blue one, but granny\'s one is red', answer: 'jellyfish', img: QR  },
 
 
 

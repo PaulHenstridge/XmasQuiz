@@ -7,12 +7,15 @@ const Prize = styled.div`
     transform: translate(-50%, -50%);
     z-index: 100;
     background-color: red;
+    & h1 {
+        color: white;
+    }
 `
 
 const PrizeBox = () => {
     return ( <Prize>
-    <h2>You won the prize!!!</h2>
-    <p>final instructions to claim prize etc ....</p>
+    <h2>You won!!!</h2>
+    <p>well done!    your voucher code is: <h1>8MR9-PM5G-D247</h1></p>
     </Prize> );
 }
  
